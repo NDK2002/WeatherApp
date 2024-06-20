@@ -29,7 +29,6 @@ function App() {
         const data = await response.json();
         if (response.ok) {
           setWeatherInfo(data);
-          console.log(weatherInfo);
           setErrorMessage("");
         } else {
           setErrorMessage(data.message);
