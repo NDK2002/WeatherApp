@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: #343d4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border-radius: 25px;
+  box-shadow: 0 0 70px -10px rgba(0, 0, 0, .2);
+  background-color: #222831;
+  color: #fff;
+  height: 400px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background: #343d4b;
+  color: #fff;
+}
+
+.weather-side {
+  position: relative;
+  height: 100%;
+  width: 300px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, .2);
+  float: left;
+}
+
+.weather-gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #59b6b9;
+  border-radius: 25px;
+  opacity: .8;
+}
+
+.date-container {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.date-dayname {
+  margin: 0;
+}
+
+.date-day {
+  display: block;
+}
+
+.weather-container {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+.weather-temp {
+  margin: 0;
+  font-weight: 700;
+  font-size: 4em;
+}
+
+.weather-desc {
+  margin: 0;
+}
+
+.info-side {
+  position: relative;
+  float: left;
+  padding-top: 25px;
+}
+
+.today-info {
+  padding: 15px;
+  margin: 0 25px 25px;
+  border-radius: 10px;
+}
+
+.today-info>div:not(:last-child) {
+  margin: 0 0 10px;
+}
+
+.today-info>div .title {
+  float: left;
+  font-weight: 700;
+}
+
+.today-info>div .value {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
